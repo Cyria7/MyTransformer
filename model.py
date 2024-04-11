@@ -191,7 +191,8 @@ class ProjectionLayer(nn.Module):
 
 
 class Transformer(nn.Module):
-    def __init__(self, encoder: Encoder, decoder: Decoder, src_embed: InputEmbeddings, tgt_embed: InputEmbeddings, src_pos: PostionalEncoding,
+    def __init__(self, encoder: Encoder, decoder: Decoder, src_embed: InputEmbeddings,
+                 tgt_embed: InputEmbeddings, src_pos: PostionalEncoding,
                  tgt_pos: PostionalEncoding, projection_layer: ProjectionLayer):
         super().__init__()
         self.encoder = encoder
