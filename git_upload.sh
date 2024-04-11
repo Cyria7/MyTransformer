@@ -1,3 +1,3 @@
 git add .
-git commit -m "change: set cuda3"
+git commit -m "fix: print bug"
 git push
